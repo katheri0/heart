@@ -1,0 +1,74 @@
+.body
+{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #252525;
+
+}
+
+.heart
+{
+    height: 70px;
+    width: 70px;
+    position: relative;
+    margin: auto;
+ 
+    top: 250px;
+    background: red;
+    transform: rotate(-240deg)  scale(2);
+    box-shadow: -10px 10px 90px red;
+
+}
+.heart:hover
+
+{  
+     transform: rotate(133deg) scale(4);
+     background: red;
+}
+
+.ss
+{
+    margin: 300px;
+    justify-content: center;
+    position: relative;
+    left: 390px;
+    top:-100px;
+    font-size: 25px;
+    font-weight: 900;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.heart::before
+{
+    content: "";
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background: red;
+    top: 50%;
+    border-radius:50px;
+    box-shadow: -10px -10px 90px red;
+
+
+
+}
+
+
+.heart::after
+{
+    content: "";
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    right: 50%;
+    background: red;
+    border-radius:50px;
+    box-shadow: 10px 10px 90px red;
+
+
+
+}
